@@ -1,8 +1,8 @@
 def roll_call_dwarves(dwarves)
   dwarves.each_with_index do |ele,idx| 
-    num = idx + 1
+    num = (idx + 1).to_s
     sent = num + " " + ele
-    puts "#{num} #{ele}"
+    puts "#{num}. #{ele}"
   end
 end
 
